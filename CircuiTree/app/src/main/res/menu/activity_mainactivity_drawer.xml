@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_maps"
+            android:icon="@drawable/googlemaps"
+            android:title="Locate me " />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Gallery" />
+        <item
+            android:id="@+id/nav_barcode"
+            android:icon="@drawable/barcode"
+            android:title="Barcode Scanner" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/fb"
+                android:title="Social Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/feedback"
+                android:title="Comments and Ratings" />
+            <item
+                android:id="@+id/nav_aboutUs"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="About Us" />
+        </menu>
+    </item>
+
+</menu>

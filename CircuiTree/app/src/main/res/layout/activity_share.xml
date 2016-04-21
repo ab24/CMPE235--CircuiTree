@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ab.circuitree.ShareActivity">
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share Captued Moments with your Friends"
+        android:id="@+id/VideoShareButton"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:background="#3B5998"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share Audio with your Friends"
+        android:id="@+id/audioShareButton"
+        android:layout_below="@+id/VideoShareButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:textColor="#ffffff"
+        android:background="#3B5998" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share Pictures with your friends"
+        android:id="@+id/imageShareButton"
+        android:layout_marginBottom="54dp"
+        android:layout_above="@+id/VideoShareButton"
+        android:layout_centerHorizontal="true"
+        android:background="#3b5998"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>
