@@ -96,7 +96,7 @@ public class CommentsAndRatingActivity extends AppCompatActivity {
      */
         public void invokeBackEnd(RequestParams params) {
         AsyncHttpClient client = new AsyncHttpClient();
-        client.post("http://192.168.29.132:8080/circuitree/addComments", params, new AsyncHttpResponseHandler() {
+        client.post("http://192.168.56.1:8080/circuitree/addComments", params, new AsyncHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
                 String response = new String(responseBody);

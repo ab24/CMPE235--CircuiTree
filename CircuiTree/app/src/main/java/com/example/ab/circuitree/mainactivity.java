@@ -85,19 +85,19 @@ public class mainactivity extends AppCompatActivity
         prgDialog.show();
         Intent intentForToken = getIntent();
         sToken=intentForToken.getStringExtra("sessionToken");
-        if(sToken ==null) {
+        /*if(sToken ==null) {
             Intent i = new Intent(this, LoginActivity.class);
             startActivity(i);
-        }else{
+        }else*/{
             Toast.makeText(getApplicationContext(), "Welcome to CircuiTree", Toast.LENGTH_LONG).show();
             Intent intent1=new Intent(this, InteractActivity.class);
-            if(sToken.contains(":")) {
+           /* if(sToken.contains(":")) {
                 String[] sTokenArray = sToken.split(":");
                 sToken = sTokenArray[1];
                 sTokenArray = sToken.split("\"");
                 sToken = sTokenArray[1];
             }
-            intent1.putExtra("sessionToken",sToken);
+            intent1.putExtra("sessionToken",sToken);*/
             startActivity(intent1);
         }
     }
@@ -185,7 +185,7 @@ public class mainactivity extends AppCompatActivity
     }
     public void invokeBackEnd(RequestParams requestParams){
         AsyncHttpClient client = new AsyncHttpClient();
-        client.get("http://192.168.29.132:8080/circuitree/checkComments", requestParams, new AsyncHttpResponseHandler() {
+        client.get("http://192.168.56.1:8080/circuitree/checkComments", requestParams, new AsyncHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
                 prgDialog.hide();

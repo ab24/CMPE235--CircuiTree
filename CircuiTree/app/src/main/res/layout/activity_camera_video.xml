@@ -15,8 +15,11 @@
         android:text="Capture Your Moment"
         android:id="@+id/cameraButton"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="98dp" />
+        android:layout_marginTop="98dp"
+        android:background="#3b5998"
+        android:textColor="#ffffff"
+        android:layout_alignEnd="@+id/videoButton"
+        android:layout_alignStart="@+id/videoButton" />
 
     <Button
         android:layout_width="wrap_content"
@@ -24,7 +27,9 @@
         android:text="Record Your Moment"
         android:id="@+id/videoButton"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:background="#3b5998" />
 
     <Button
         android:layout_width="wrap_content"
@@ -34,5 +39,7 @@
         android:layout_below="@+id/videoButton"
         android:layout_alignStart="@+id/cameraButton"
         android:layout_marginTop="77dp"
+        android:textColor="#ffffff"
+        android:background="#3b5998"
         android:layout_alignEnd="@+id/videoButton" />
 </RelativeLayout>

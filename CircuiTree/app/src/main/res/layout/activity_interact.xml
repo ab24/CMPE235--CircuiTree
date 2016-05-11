@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New ToggleButton"
-        android:id="@+id/toggleButton"
+        android:id="@+id/lightButton"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="91dp" />
@@ -22,9 +22,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New ToggleButton"
-        android:id="@+id/toggleButton2"
+        android:id="@+id/soundButton"
         android:layout_centerVertical="true"
-        android:layout_alignStart="@+id/toggleButton" />
+        android:layout_alignStart="@+id/lightButton" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -32,8 +32,8 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Lights"
         android:id="@+id/textView2"
-        android:layout_alignTop="@+id/toggleButton"
-        android:layout_alignBottom="@+id/toggleButton"
+        android:layout_alignTop="@+id/lightButton"
+        android:layout_alignBottom="@+id/lightButton"
         android:layout_alignParentStart="true" />
 
     <TextView
@@ -42,16 +42,16 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Sound"
         android:id="@+id/textView3"
-        android:layout_alignBottom="@+id/toggleButton2"
+        android:layout_alignBottom="@+id/soundButton"
         android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/toggleButton2"
-        android:layout_toStartOf="@+id/toggleButton2" />
+        android:layout_alignTop="@+id/soundButton"
+        android:layout_toStartOf="@+id/soundButton" />
 
     <MediaController
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/mediaController"
-        android:layout_below="@+id/toggleButton2"
+        android:layout_below="@+id/soundButton"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="38dp" />
 

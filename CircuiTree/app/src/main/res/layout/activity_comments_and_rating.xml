@@ -67,6 +67,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignEnd="@+id/commentsText"
         android:textColor="#ffffff"
-        android:background="#3b5998" />
+        android:background="#3b5998"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>

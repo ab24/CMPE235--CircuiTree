@@ -128,7 +128,7 @@ public class Register extends AppCompatActivity {
         prgDialog.show();
         AsyncHttpClient client = new AsyncHttpClient();
 
-        client.post("http://192.168.29.132:8080/circuitree/register", params, new AsyncHttpResponseHandler() {
+        client.post("http://192.168.56.1:8080/circuitree/register", params, new AsyncHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
                 try {

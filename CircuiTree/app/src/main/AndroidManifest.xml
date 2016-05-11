@@ -18,6 +18,9 @@
     <meta-data
         android:name="com.google.android.gms.vision.DEPENDENCIES"
         android:value="barcode" />
+    <meta-data
+        android:name="com.bubblesoft.android.bubbleupnp.START_SERVICE"
+        android:value="sound" />
 
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
@@ -88,7 +91,8 @@
         <activity android:name=".InteractActivity" />
         <activity android:name=".ShareActivity" />
         <activity android:name=".CommentsAndRatingActivity" />
-        <activity android:name=".CommentedActivity"></activity>
+        <activity android:name=".CommentedActivity" />
+        <activity android:name=".LightInteractActivity"></activity>
     </application>
 
 </manifest>

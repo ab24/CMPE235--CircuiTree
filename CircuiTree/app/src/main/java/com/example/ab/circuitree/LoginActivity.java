@@ -79,7 +79,7 @@ public class LoginActivity extends AppCompatActivity  {
     public void invokeBackEnd(RequestParams requestParams){
         prgDialog.show();
         AsyncHttpClient client = new AsyncHttpClient();
-        client.get("http://192.168.29.132:8080/circuitree/login", requestParams, new AsyncHttpResponseHandler() {
+        client.get("http://192.168.43.27:8080/circuitree/login", requestParams, new AsyncHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
                 prgDialog.hide();
@@ -121,7 +121,7 @@ public class LoginActivity extends AppCompatActivity  {
                 }
                 // When Http response code is '500'
                 else if(statusCode == 500){
-                    Toast.makeText(getApplicationContext(), "Something went wrong at server end", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Check Those LIGHTS", Toast.LENGTH_LONG).show();
                 }
                 // When Http response code other than 404, 500
                 else{
